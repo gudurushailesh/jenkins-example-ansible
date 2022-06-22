@@ -4,6 +4,15 @@ pipeline {
    ANSIBLE_PRIVATE_KEY=credentials('mariadb-private-key') 
   }
   stages {
+    stage('Hello') {
+      steps {
+        sh '''
+          ansible --version
+          ansible-playbook --version
+          ansible-galaxy --version
+        '''
+      }
+    }
     stage('nginx') {
       steps {
         sh 'ansible-galaxy collection install -r requirements.yml'
