@@ -55,4 +55,4 @@
       name: tomcat
       state: started
       enabled: false
-      daemon_reload: true
+      daemon_reload: false
