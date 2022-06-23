@@ -50,8 +50,3 @@
       recurse: yes
       state: directory
 
-  - name: Start and enable Tomcat 9 on service
-    systemd:
-      name: tomcat
-      state: started
-      daemon_reload: true
