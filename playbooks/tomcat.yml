@@ -54,5 +54,5 @@
     systemd:
       name: tomcat
       state: started
-      enabled: true
+      enabled: false
       daemon_reload: true
