@@ -21,7 +21,7 @@
     group:
       name: tomcat
 
-  - name: add tomcat user
+  - name: add tomcat 9 user
     user:
       name: tomcat
       group: tomcat
@@ -50,9 +50,8 @@
       recurse: yes
       state: directory
 
-  - name: Start and enable Tomcat service
+  - name: Start and enable Tomcat 9 on service
     systemd:
       name: tomcat
       state: started
-      enabled: false
-      daemon_reload: false
+      daemon_reload: true
