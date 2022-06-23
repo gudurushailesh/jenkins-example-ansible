@@ -6,7 +6,7 @@
     -
       name: "restart tomcat"
       service: "name=httpd state=restarted"
-  hosts: slave1
+  hosts: webservers
   tasks:
     -
       name: "install tomcat"
