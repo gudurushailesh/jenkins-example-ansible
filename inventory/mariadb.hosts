@@ -1,6 +1,6 @@
 [all:vars]
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
-[slave1]
+[webservers]
 tomcat ansible_ssh_host=65.1.147.117 ansible_ssh_port=22 ansible_user=ubuntu
 
